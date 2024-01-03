@@ -149,8 +149,8 @@
                   <h5>Aug 2023 - Dec 2023</h5>
                   <p><em>Rocket Mortgage, MI, USA</em></p>
                   <ul>
-                    <li>Deploy end to end AWS ETL process to transform call data to be delivered to PowerBi dashboard used by executives which has helped to increase the number of callbacks for positive leads on mortgages by 25% in a month.</li>
-                    <li>Create the SQL ETL stored procedures and triggers in SQL Server Management Studio and schedule them in SSIS containers and monitor and resolve critical issues and product support services on a daily basis.</li>
+                    <li>Deploy end to end AWS Glue ETL process in Pyspark using CircleCI to transform call data from AWS Redshift to AWS Athena for analysis in PowerBi dashboard leading to increased positive mortgages leads by 25% in a month.</li>
+                    <li>Orchestrate the ETL process for team hierarchy data using Apache Airflow, employing BashOperator, PythonOperator, MsSQLOperator etc and monitor and resolve critical issues within Apache Airflow on a daily basis.</li>
                   </ul>
                     </div>
                 <div class="resume-item">
@@ -163,34 +163,35 @@
                   </ul>
                     </div>
                 <div class="resume-item">
-                  <h4>Backend Developer</h4>
+                  <h4>Full Stack Developer</h4>
                   <h5>2022 - 2023</h5>
                   <p><em>Arizona State University, AZ, USA</em></p>
                   <ul>
-                    <li>Secured a supply chain client agreement by presenting and building a PowerBi dashboard utilizing live data from ASU Sundevil store inventory by DirectQuery connectivity and SQL queries to analyze commodity pricing and store profit.</li>
-                    <li>Implemented terraform REST APIs established to retrieve data with AWS API Gateway, Lambda & S3, display retrieved information on React webpage and created rigorous and reliable user acceptance testing using Jest Suite.</li>
-                    <li>Assisted product owners in gathering business requirements and formulating key performance indicators (KPI) by providing solution analysis of a Java geo-tracking application for an electronics client.</li>
+                    <li>Implemented terraform to deploy REST APIs that are used for ASU’s course registration worldwide using AWS API Gateway, Lambdas, S3 orchestrated through StepFunctions using NodeJS application, tested using using Jest Suite.</li>
+                    <li>Secured a supply chain client agreement by presenting and building a PowerBi dashboard utilizing live data from ASU Sundevil store inventory in SnowFlake and using DBT and SQL queries to model and analyze commodity pricing.</li>
+                    
                   </ul>
                     </div>
-                <div class="resume-item">
-                  <h4>Tutor</h4>
-                  <h5>2022 - 2022</h5>
-                  <p><em>Arizona State University, AZ, USA</em></p>
-                  <ul>
-                    <li>Assist students in studying core Engineering concepts using thorough knowledge of learning styles online & in-person.</li>
-                    <li>Undergo constant evaluation with mentors to improve working style with a strong sense to follow instructions.</li>
-                  </ul>
-                    </div>
+                
                            
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="resume-item">
-              <h4>Cloud Engineering Analyst</h4>
+              <h4>Tutor</h4>
+              <h5>2022 - 2022</h5>
+              <p><em>Arizona State University, AZ, USA</em></p>
+              <ul>
+                <li>Assist students in studying core Engineering concepts using thorough knowledge of learning styles online & in-person.</li>
+                <li>Undergo constant evaluation with mentors to improve working style with a strong sense to follow instructions.</li>
+              </ul>
+                </div>
+            <div class="resume-item">
+              <h4>Cloud Data Engineer</h4>
               <h5>2020 - 2022</h5>
               <p><em>Deloitte USI, India</em></p>
               <ul>
-                <li>Lead a module of Data Engineering team of a migration project from on-premise environments to AWS and improved the efficiency of the projects by automation of 65% of the data acquisition and normalization process in Python.</li>
-                <li>Orchestrated 30% of the AWS GLUE ETL process using AWS CDK for data transformation from FWF and CSV format to schema-defined XML files to be loaded into S3 and queried using AWS Athena on glue table storage.</li>
+                <li>Lead a 12-member data engineering team by owning architecture for automation of data mapping, normalization and transformation of real time data ingested from Apache Kafka using AWS MSK and AWS Glue.</li>
+                <li>Collaborated in the migration of on-premise to Cloud environment for a Fortune 500 client by orchestrating 30% of GLUE ETL with AWS CDK, loaded into S3 and queried using AWS Athena on glue table storage.</li>
               </ul></div> 
            
                 <div class="resume-item">
@@ -203,12 +204,12 @@
                   </ul>
                     </div>
                     <div class="resume-item">
-                      <h4>Android Application Developer Intern</h4>
+                      <h4>Python Developer Intern</h4>
                       <h5>2019 (1 month) </h5>
                       <p><em>MicroObjects Pvt Ltd, India :</em></p>
                       <ul>
-                        <li>Executed and presented prototype of a Java application using Google Geolocation APIs in Android Studio by quantifying user preferences into UML Agile tools (Lucid) as a high-quality, usable product to stakeholders.</li>
-                        <li>Secured client agreement by presenting a dashboard report of the Agile activities by working in close relation with Product Team, UX Designers, and Java Engineers in cross-functional squads</li>
+                        <li>Executed and presented prototype of a Python application using Google Geolocation APIs in Android Studio by quantifying user preferences into UML Agile tools (Lucid) as a high-quality, usable product to stakeholders.</li>
+                        <li>Secured client agreement by presenting a dashboard report of the Agile activities by working in close relation with Product Team, UX Designers, and Java Engineers in cross-functional squads.</li>
                       </ul>
                         </div>
             
@@ -217,19 +218,13 @@
 
       </div>
     </section><!-- End Resume Section -->
-
-    <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio section-bg">
       <div class="container">
-
         <div class="section-title">
           <h2>Projects</h2>
-           </div>
-
-        
-
+        </div>
+    
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-music.png" class="img-fluid" alt="">
@@ -238,7 +233,10 @@
                 Aug 2023 - Dec 2023</em>
               </p>
               <p><em>Class Project, Arizona State University</em></p>
-              <button>Github</button>
+              <a href="https://github.com/diyaliza/Music-Recommendation-system" target="_blank">
+                <button>Github</button>
+              </a>
+              
               <ul>
                 <li>Develop a music recommendation system based on the user inputs using vectorizer and KMeans clustering, trained using Spotify database, visualized through a Node-React web application.</li>
                   <li>Embedded a PowerBi dashboard to analyze and track listening habits and preferences showcasing daily trends and music consumption patterns, thus enhancing the overall user experience and engagement. </li>
@@ -247,21 +245,52 @@
               
             </div>
           </div>
+    
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/bookexchange.png" class="img-fluid" alt="">
-              <h4>Book exchange platform fullstack application  </h4>
+              <img src="assets/img/portfolio/real_estate_banners.jpg" class="img-fluid" alt="">
+              <h4>Real Estate Web application</h4>
+              <p><em>
+                Dec 2023 - Jan 2024</em>
+              </p>
+              <p><em>Self Project</em></p>
+              <a href="https://github.com/diyaliza/Real-Estate-web-application" target="_blank">
+                <button>Github</button>
+              </a>
+              <ul>
+                <li>Create a real estate web application in React JS, Node JS, Mongo DB with authorization, role based access, microservices involved.</li>
+                  <li>Create a real time messaging system in Apache Kafka to send emails to Realtors when bids are placed. </li>
+              </ul>
+             
+              
+            </div>
+          </div>
+    
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-music.png" class="img-fluid" alt="">
+              <h4>Music Recommendation system and PowerBi Analysis </h4>
               <p><em>
                 Aug 2023 - Dec 2023</em>
               </p>
               <p><em>Class Project, Arizona State University</em></p>
+              <a href="https://github.com/diyaliza/Music-Recommendation-system" target="_blank">
+                <button>Github</button>
+              </a>
+              
               <ul>
-                <li>A fullstack application built on NodeJs, ReactJs and MongoDB as the database used as a book exchange application for users with user registration, login, book registration, list viewing functionality. </li>
-                  <li>User authentication done using JWT tokens, application created using MVC architecture, tested with Jest, X-Unit tests.  </li>
+                <li>Develop a music recommendation system based on the user inputs using vectorizer and KMeans clustering, trained using Spotify database, visualized through a Node-React web application.</li>
+                  <li>Embedded a PowerBi dashboard to analyze and track listening habits and preferences showcasing daily trends and music consumption patterns, thus enhancing the overall user experience and engagement. </li>
               </ul>
+             
               
             </div>
           </div>
+          
+    
+          <!-- Repeat for other portfolio items -->
+        </div>
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
@@ -276,6 +305,7 @@
               </ul>
               
             </div>
+            
           </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
@@ -283,6 +313,10 @@
               <h4>Abstract review summarization and sentiment analysis</h4>
             <p><em>Dec 2019 - Jun 2020</em></p>
             <p><em>Class Project, Model Engineering College</em></p>
+            <a href="https://github.com/diyaliza/AbstractiveUserReviewConsolidation" target="_blank">
+              <button>Github</button>
+            </a>
+            
             <ul><li>Accomplished creating abstract summaries of reviews from Amazon using Sequence-to-Sequence algorithm.</li>
               <li>Trained the model using Naïve-Bayes classifier algorithm for sentimental analysis of tweets and reviews with 94% accuracy which was visualized in a web application built on Flask and Bootstrap.</li>
               </li></ul>
@@ -300,13 +334,16 @@
               </li></ul>
               
             </div>
-          </div>
-
+          
+    
+          <!-- Repeat for other portfolio items -->
         </div>
-
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>
+    
 
+    <!-- ======= Portfolio Section ======= -->
+   
     
 
     <!-- ======= Testimonials Section ======= -->
